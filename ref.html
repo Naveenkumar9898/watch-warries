@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jquery</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <style>
+          h1 {
+            color: blueviolet;
+          }
+
+          .card {
+            width: 300px;
+            /* border: 2px solid red; */
+            height: 400px;
+          }
+
+          .card .card-img {
+            height: 350px;
+          }
+
+          .card .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          .card .footer {
+            border: 2px solid;
+            padding: 10px 20px;
+            text-align: center;
+          }
+
+          .footer i {
+            font-size: 32px;
+          }
+        </style>
+      </head>
+
+      <body>
+        <!-- <input type="text" id="color"> -->
+        <input type="text" name="" id="color" />
+
+        <button id="btn">hide</button>
+        <button id="btn1">show</button>
+
+        <h1>Jquery</h1>
+        <div>
+          <i class="fa fa-shopping-cart" id="cart" aria-hidden="true"> 1</i>
+        </div>
+        <p>offline</p>
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://w0.peakpx.com/wallpaper/296/952/HD-wallpaper-thala-ajith-old-pic-actor-south-indian.jpg"
+              alt=""
+            />
+          </div>
+          <div class="footer">
+            <i class="fa fa-heart-o" id="heart" aria-hidden="true"></i>
+            <span>1</span>
+            <div>
+              <button class="btn" pname="krish">Addtocart</button>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://w0.peakpx.com/wallpaper/296/952/HD-wallpaper-thala-ajith-old-pic-actor-south-indian.jpg"
+              alt=""
+            />
+          </div>
+          <div class="footer">
+            <i class="fa fa-heart-o" id="heart" aria-hidden="true"></i>
+            <span>1</span>
+            <div>
+              <button class="btn" pname="naveen">Addtocart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quia
+          omnis officia, et, possimus tenetur iusto aut beatae blanditiis dolor
+          aspernatur atque explicabo! Asperiores recusandae, voluptatem id
+          corporis temporibus expedita. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Sed minus illum nulla repudiandae illo quod ut
+          consequatur. Incidunt iusto minus, reiciendis consequuntur saepe iste
+          aspernatur fuga doloribus provident nobis sequi.lo Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Harum beatae laudantium labore
+          eaque nisi minus dignissimos eveniet, reprehenderit nostrum velit
+          expedita repudiandae quaerat unde et, nobis dolorem similique ullam
+          aliquid.
+        </p> -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script>
+          //   $(document).ready(function () {
+          //     $(document).on("click", "#btn", function () {
+          //       // $("p").hide(1000)
+          //       $("p").slideDown(1000);
+          //     });
+
+          //     $(document).on("click", "#btn1", function () {
+          //       // $("p").show(1000)
+          //       //  $("p").slideUp(1000);
+          //       $("p").slideToggle(2000);
+          //     });
+
+          //   $(document).on("click", "#btn", function () {
+          //     // alert("hi")
+          //     let colr = $("#color").val();
+          //     // let sdf =${}
+          //     // alert(colr)
+          //     $("*").css({
+          //       "background-color": colr,
+          //     });
+          //   });
+
+          $(".btn").click;
+          let atc = 0;
+          innerHTML = html();
+          innerText = text();
+          value = val();
+          $("#cart").html(atc);
+
+          $(document).on("click", ".btn", function () {
+            // alert("hi")
+            atc++;
+            console.log(atc);
+            let name = $(this).attr("pname");
+            console.log(name);
+            $("#cart").html(atc);
+          });
+
+          console.log("hs");
+
+          // $(".card-img img").css({
+          //     'width': "100%",
+          //     "height": "100%",
+          //     "object-fit": "cover"
+
+          // })
+
+          // $(" ")
+          // $( "#id-name" )
+          // $(".classname")
+          // $("h1")
+
+          // $("h1").css("background-color","green");
+          // const isChek = false;
+          // if(isChek){
+          //     $("p").css({
+          //     "background-color":"blue",
+          //     "color":'white',
+          //      'font-family':"cursive",
+          //      'font-size':"32px",
+          //      'border-left':'10px solid red'
+
+          // });
+          // }else{
+          //     $("p").css({
+          //     "background-color":"blue",
+          //     "color":'white',
+          //      'font-family':"cursive",
+          //      'font-size':"32px",
+          //      'border-left':'10px solid green'
+
+          // });
+          // }
+
+          // let a = 5;
+          //   a = 40
+          // let i =0;
+          // $("#heart").click(function () {
+          //     // alert("hi")
+
+          //     const he = $("#heart").attr("class");
+          //     console.log(he);
+          //     // if()
+          //     if (he == "fa fa-heart-o") {
+          //         $("#heart").css({
+          //             "color": "red"
+          //         })
+          //         $("#heart").attr("class","fa fa-heart");
+          //         i++;
+          //     }
+          //     else if(he == "fa fa-heart"){
+          //          $("#heart").attr("class","fa fa-heart-o");
+          //         $("#heart").css({
+          //             "color": "black"
+          //         })
+
+          //         i--;
+          //     }
+          //     console.log(i)
+
+          // })
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warrior Watch</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="script.js" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header section start -->
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid header">
+          <a class="navbar-brand" href="" style="color: silver">
+            <img
+              src="images/logologo.jpg"
+              alt=""
+              width="40"
+              height="24"
+              class="d-inline-block align-text-top"
+            />Warrior watch
+          </a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="landing.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Collections</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                >About</a
+              >
+            </li>
+          </ul>
+          <div style="display:flex;">
+          <div class="shopping">
+           <a href="cart.html"> <button
+              type="button"
+              class=" position-relative"
+              style="background-color: goldenrod; color: white;border-radius: 8px;padding: 2m
+              px;"
+            >
+              Cart
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                id="cart"
+              >
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+            </a>
+          </div>
+          <!--  -->
+          <div class="shopping lagout">
+            <button
+              type="button"
+              class=" position-relative"
+              style="background-color: goldenrod; color: white;border-radius: 8px;padding: 2m
+              px;"
+            >Logout</button>
+            
+          </div>
+          </div>
+          <!--  -->
+        </div>
+      </nav>
+    </header>
+    <!-- Header section end -->
+    <!-- Nav section start -->
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <!-- <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button> -->
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/cwall-4.jpg" class="d-block w-200" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <div class="title1">
+              <p>Exclusive Offer -20% Off This Week</p>
+              <h1>H-Vault Classico</h1>
+              <h4>
+                H-Vault Watches Are A Lot Like Classic American Muscle Cars -
+                <br />
+                Expect For The American Part That Is.
+              </h4>
+
+              <h5>Starting At <strong>$1.499.00</strong></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/cwall-5.jpg" class="d-block w-200" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <div class="title2">
+              <p>Exclusive Offer -20% Off This Week</p>
+              <h1>H-Vault Classico</h1>
+              <h4>
+                H-Vault Watches Are A Lot Like Classic American Muscle Cars -
+                <br />
+                Expect For The American Part That Is.
+              </h4>
+
+              <h5>Starting At <strong>$1.499.00</strong></h5>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div> -->
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Nav section end -->
+    <!-- <section>
+      <div class="container">
+        <span style="--i: 1"
+          ><img src="images/w8-removebg-preview.png" alt=""
+        /></span>
+        <span style="--i: 2"
+          ><img src="images/w1-removebg-preview.png" alt=""
+        /></span>
+        <span style="--i: 3"
+          ><img src="images/w2-removebg-preview.png" alt=""
+        /></span>
+        <span style="--i: 4"
+          ><img src="images/w3-removebg-preview.png" alt=""
+        /></span>
+        <span style="--i: 5"
+          ><img src="images/w4-removebg-preview.png" alt=""
+        /></span>
+        <span style="--i: 6"
+          ><img src="images/w5-removebg-preview.png" alt=""
+        /></span>
+        <span style="--i: 7"
+          ><img src="images/w6-removebg-preview.png" alt=""
+        /></span>
+      </div>
+    </section> -->
+    <!-- card design -->
+    <main>
+      <div class="card">
+        <div class="badge">HOT SALE</div>
+        <div class="tilt">
+          <div class="img">
+            <img src="images/w1-removebg-preview.png" alt="Premium Laptop" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="cat">High-Performance Watch</div>
+          <h2 class="title">BODERRY</h2>
+          <p class="desc">
+            Titan Metal Mechanicals Blue Dial Stainless Steel Strap Analog Watch
+          </p>
+          <div class="feats">
+            <span class="feat">Fiber glass</span>
+            <span class="feat">16-Hour Battery</span>
+            <span class="feat">Thunderbolt 4</span>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <span class="old">$2,499</span>
+              <span class="new">$1,800</span>
+            </div>
+            <button class="btn">
+              <span id="btns">Add to Cart</span>
+              <svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta">
+            <div class="rating">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <span class="rcount">245 Reviews</span>
+            </div>
+            <div class="stock">In Stock</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="badge">HOT SALE</div>
+        <div class="tilt">
+          <div class="img">
+            <img src="images/w2-removebg-preview.png" alt="Premium Laptop" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="cat">High-Performance Laptop</div>
+          <h2 class="title">Titan</h2>
+          <p class="desc">
+            Cutting-edge performance with Intel Core i9, 32GB RAM, and a 1TB SSD
+            in a sleek, lightweight design.
+          </p>
+          <div class="feats">
+            <span class="feat">Fiber glass</span>
+            <span class="feat">16-Hour Battery</span>
+            <span class="feat">Thunderbolt 4</span>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <span class="old">$2,499</span>
+              <span class="new">$1,650</span>
+            </div>
+            <button class="btn">
+              <span id="btns">Add to Cart</span>
+              <svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta">
+            <div class="rating">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <span class="rcount">245 Reviews</span>
+            </div>
+            <div class="stock">In Stock</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="badge">HOT SALE</div>
+        <div class="tilt">
+          <div class="img">
+            <img src="images/w3-removebg-preview.png" alt="Premium Laptop" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="cat">High-Performance Laptop</div>
+          <h2 class="title">RUSTET</h2>
+          <p class="desc">
+            Cutting-edge performance with Intel Core i9, 32GB RAM, and a 1TB SSD
+            in a sleek, lightweight design.
+          </p>
+          <div class="feats">
+            <span class="feat">4K Display</span>
+            <span class="feat">16-Hour Battery</span>
+            <span class="feat">Thunderbolt 4</span>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <span class="old">$2,499</span>
+              <span class="new">$1,300</span>
+            </div>
+            <button class="btn">
+              <span id="btns">Add to Cart</span>
+              <svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta">
+            <div class="rating">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <span class="rcount">245 Reviews</span>
+            </div>
+            <div class="stock">In Stock</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="badge">HOT SALE</div>
+        <div class="tilt">
+          <div class="img">
+            <img src="images/w4-removebg-preview.png" alt="Premium Laptop" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="cat">High-Performance Laptop</div>
+          <h2 class="title">Honmin</h2>
+          <p class="desc">
+            Cutting-edge performance with Intel Core i9, 32GB RAM, and a 1TB SSD
+            in a sleek, lightweight design.
+          </p>
+          <div class="feats">
+            <span class="feat">4K Display</span>
+            <span class="feat">16-Hour Battery</span>
+            <span class="feat">Thunderbolt 4</span>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <span class="old">$2,499</span>
+              <span class="new">$1,600</span>
+            </div>
+            <button class="btn">
+              <span id="btns">Add to Cart</span>
+              <svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta">
+            <div class="rating">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <span class="rcount">245 Reviews</span>
+            </div>
+            <div class="stock">In Stock</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="badge">HOT SALE</div>
+        <div class="tilt">
+          <div class="img">
+            <img src="images/w5-removebg-preview.png" alt="Premium Laptop" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="cat">High-Performance Laptop</div>
+          <h2 class="title">D1 Milano</h2>
+          <p class="desc">
+            Cutting-edge performance with Intel Core i9, 32GB RAM, and a 1TB SSD
+            in a sleek, lightweight design.
+          </p>
+          <div class="feats">
+            <span class="feat">4K Display</span>
+            <span class="feat">16-Hour Battery</span>
+            <span class="feat">Thunderbolt 4</span>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <span class="old">$2,499</span>
+              <span class="new">$1,799</span>
+            </div>
+            <button class="btn">
+              <span id="btns">Add to Cart</span>
+              <svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta">
+            <div class="rating">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <span class="rcount">245 Reviews</span>
+            </div>
+            <div class="stock">In Stock</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="badge">HOT SALE</div>
+        <div class="tilt">
+          <div class="img">
+            <img src="images/w6-removebg-preview.png" alt="Premium Laptop" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="cat">High-Performance Laptop</div>
+          <h2 class="title">BERING</h2>
+          <p class="desc">
+            Cutting-edge performance with Intel Core i9, 32GB RAM, and a 1TB SSD
+            in a sleek, lightweight design.
+          </p>
+          <div class="feats">
+            <span class="feat">4K Display</span>
+            <span class="feat">16-Hour Battery</span>
+            <span class="feat">Thunderbolt 4</span>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <span class="old">$2,499</span>
+              <span class="new">$1,800</span>
+            </div>
+            <button class="btn">
+              <span id="btns">Add to Cart</span>
+              <svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta">
+            <div class="rating">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <span class="rcount">245 Reviews</span>
+            </div>
+            <div class="stock">In Stock</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="badge">HOT SALE</div>
+        <div class="tilt">
+          <div class="img">
+            <img src="images/w7-removebg-preview.png" alt="Premium Laptop" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="cat">High-Performance Laptop</div>
+          <h2 class="title">Acnos Pro X</h2>
+          <p class="desc">
+            Cutting-edge performance with Intel Core i9, 32GB RAM, and a 1TB SSD
+            in a sleek, lightweight design.
+          </p>
+          <div class="feats">
+            <span class="feat">4K Display</span>
+            <span class="feat">16-Hour Battery</span>
+            <span class="feat">Thunderbolt 4</span>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <span class="old">$2,499</span>
+              <span class="new">$1,450</span>
+            </div>
+            <button class="btn">
+              <span id="btns">Add to Cart</span>
+              <svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta">
+            <div class="rating">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <span class="rcount">245 Reviews</span>
+            </div>
+            <div class="stock">In Stock</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="badge">HOT SALE</div>
+        <div class="tilt">
+          <div class="img">
+            <img src="images/w8-removebg-preview.png" alt="Premium Laptop" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="cat">High-Performance Laptop</div>
+          <h2 class="title">Cavalli</h2>
+          <p class="desc">
+            Cutting-edge performance with Intel Core i9, 32GB RAM, and a 1TB SSD
+            in a sleek, lightweight design.
+          </p>
+          <div class="feats">
+            <span class="feat">4K Display</span>
+            <span class="feat">16-Hour Battery</span>
+            <span class="feat">Thunderbolt 4</span>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <span class="old">$2,499</span>
+              <span class="new">$1,500</span>
+            </div>
+            <button class="btn">
+              <span id="btns">Add to Cart</span>
+              <svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta">
+            <div class="rating">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#FFD700"
+                stroke="#FFD700"
+                stroke-width="0.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <span class="rcount">245 Reviews</span>
+            </div>
+            <div class="stock">In Stock</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- card design end  -->
+
+    <div class="offer">
+      <div class="tcon">
+        <p class="">Sale Off 20% All Products</p>
+        <h1 style="color: gold;">New Trending Collection</h1>
+        <h3>We Believe That Good Design is Always in Season</h3>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="con1">
+        <h4>Home</h4>
+        <h4>Service</h4>
+        <h4>About</h4>
+        <h4>location</h4>
+
+      </div>
+      <div class="con2">
+        <h1>Warrior watch</h1>
+        <p>A website footer is the section at the bottom of a webpage that typically contains essential information and navigation links. </p>
+      </div>
+      
+      <div class="con3">
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+      <i class="fa fa-google" aria-hidden="true"></i>
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // $("#btns").click;
+      // let atc = 0;
+
+      // $(document).on("click", "#btns", function () {
+      //   // // alert("hi");
+      //   // atc++;
+      //   // // console.log(atc);
+      //   // $("#cart").html(atc);
+      //   // localStorage.setItem("products");
+
+      // });
+
+      $(document).ready(function () {
+        let product = JSON.parse(localStorage.getItem("product")) || [];
+          $("#cart").text(product.length)
+        $(".btn").click(function () {
+          let card = $(this).closest(".card");
+          let productimage = $(this).closest(".card").find("img").attr("src");
+          // console.log(pimage);
+          let productname = $(this).closest(".info").find(".title").text();
+          // console.log(pp);
+          let productprice = $(this).closest(".bottom").find(".new").text();
+          // console.log(productprice);
+          let productalready = product.find((p) => p.proname === productname);
+           let productalreadyIndex = product.findIndex((p) => p.proname === productname);
+          if (!productalready) {
+            let newproduct = {
+              proimg: productimage,
+              proname: productname,
+              proprice: productprice,
+              qty:1
+            };
+            product.push(newproduct);
+            localStorage.setItem("product", JSON.stringify(product));
+            let count = product.length;
+            // $("#cart").text(product.length)
+          }else{
+            product[productalreadyIndex].qty +=1 
+            // product.push(newproduct);
+            localStorage.setItem("product", JSON.stringify(product));
+            let count = product.length;
+            // $("#cart").text(product.length)
+          }
+
+        let tot =   product.reduce((acc , val)=>{
+             return  acc + val.qty
+          },0)
+
+           $("#cart").text(tot)
+
+        });
+      });
+
+      $(document).on("click",".lagout", function(){
+   let ischeck = confirm("Do you want lagout?")
+   if(ischeck){
+    localStorage.removeItem("product");
+        location.reload();
+        window.location.assign("index.html");
+   }
+
+})
+    </script>
+  </body>
+</html>
